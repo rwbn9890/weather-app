@@ -20,8 +20,6 @@ document.getElementById("search")
 
 
 
-getWeather(api_url)
-
 function getWeather(api_url){
     fetch(api_url)
     .then((res) => res.json())
@@ -30,7 +28,7 @@ function getWeather(api_url){
         showWeather(data)
     })
 }
-
+getWeather(api_url)
 
 getWeatherWeek(week_api_url)
 
